@@ -76,9 +76,9 @@
     <module>bigquery</module>
     <module>alluxio</module>
     <module>scio</module>
-    <module>zeppelin-web</module>
+    <!--<module>zeppelin-web</module>-->
     <module>zeppelin-server</module>
-    <module>zeppelin-distribution</module>
+    <!--<module>zeppelin-distribution</module>-->
   </modules>
 
   <properties>
@@ -245,7 +245,7 @@
       </plugin>
 
       <!-- Checkstyle plugin -->
-      <plugin>
+     <!-- <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
         <configuration>
@@ -275,7 +275,7 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin>-->
 
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
@@ -408,11 +408,11 @@
 
     <pluginManagement>
       <plugins>
-        <plugin>
+        <!--<plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
           <version>2.13</version>
-        </plugin>
+        </plugin>-->
 
         <plugin>
           <artifactId>maven-dependency-plugin</artifactId>
@@ -471,7 +471,7 @@
 
         <!--This plugin's configuration is used to store Eclipse m2e settings
           only. It has no influence on the Maven build itself. -->
-        <plugin>
+        <!--<plugin>
           <groupId>org.eclipse.m2e</groupId>
           <artifactId>lifecycle-mapping</artifactId>
           <version>1.0.0</version>
@@ -520,7 +520,7 @@
               </pluginExecutions>
             </lifecycleMappingMetadata>
           </configuration>
-        </plugin>
+        </plugin>-->
 
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -715,7 +715,7 @@
       </activation>
       <build>
         <plugins>
-        <plugin>
+        <!--<plugin>
           <groupId>org.apache.rat</groupId>
           <artifactId>apache-rat-plugin</artifactId>
           <version>0.11</version>
@@ -767,7 +767,7 @@
               <exclude>**/constants.json</exclude>
               <exclude>scripts/**</exclude>
 
-              <!-- bundled from bootstrap -->
+              &lt;!&ndash; bundled from bootstrap &ndash;&gt;
               <exclude>docs/assets/themes/zeppelin/bootstrap/**</exclude>
               <exclude>docs/assets/themes/zeppelin/css/style.css</exclude>
               <exclude>docs/assets/themes/zeppelin/js/docs.js</exclude>
@@ -775,7 +775,7 @@
               <exclude>docs/_includes/themes/zeppelin/_jumbotron.html</exclude>
               <exclude>docs/_includes/themes/zeppelin/_navigation.html</exclude>
 
-              <!-- bundled from jekyll-bootstrap -->
+              &lt;!&ndash; bundled from jekyll-bootstrap &ndash;&gt;
               <exclude>docs/404.html</exclude>
               <exclude>docs/_config.yml</exclude>
               <exclude>docs/_includes/JB/**</exclude>
@@ -792,29 +792,29 @@
               <exclude>docs/search_data.json</exclude>
               <exclude>**/dependency-reduced-pom.xml</exclude>
 
-              <!-- bundled from anchor -->
+              &lt;!&ndash; bundled from anchor &ndash;&gt;
               <exclude>docs/assets/themes/zeppelin/js/anchor.min.js</exclude>
 
-              <!-- bundled from toc -->
+              &lt;!&ndash; bundled from toc &ndash;&gt;
               <exclude>docs/assets/themes/zeppelin/js/toc.js</exclude>
 
-              <!-- bundled from lunrjs -->
+              &lt;!&ndash; bundled from lunrjs &ndash;&gt;
               <exclude>docs/assets/themes/zeppelin/js/lunr.min.js</exclude>
 
-              <!-- bundled from jekyll -->
+              &lt;!&ndash; bundled from jekyll &ndash;&gt;
               <exclude>docs/assets/themes/zeppelin/css/syntax.css</exclude>
 
-              <!-- docs (website) build target dir -->
+              &lt;!&ndash; docs (website) build target dir &ndash;&gt;
               <exclude>docs/_site/**</exclude>
               <exclude>docs/Gemfile.lock</exclude>
 
               <exclude>**/horizontalbar_mockdata.txt</exclude>
 
-              <!-- compiled R packages (binaries) -->
+              &lt;!&ndash; compiled R packages (binaries) &ndash;&gt;
               <exclude>R/lib/**</exclude>
               <exclude>r/lib/**</exclude>
 
-              <!--R-related files with alternative licenses-->
+              &lt;!&ndash;R-related files with alternative licenses&ndash;&gt;
               <exclude>r/R/rzeppelin/R/globals.R</exclude>
               <exclude>r/R/rzeppelin/R/common.R</exclude>
               <exclude>r/R/rzeppelin/R/protocol.R</exclude>
@@ -824,7 +824,7 @@
               <exclude>r/src/main/scala/scala/Console.scala</exclude>
               <exclude>r/src/main/scala/org/apache/zeppelin/rinterpreter/rscala/Package.scala</exclude>
               <exclude>r/src/main/scala/org/apache/zeppelin/rinterpreter/rscala/RClient.scala</exclude>
-              <!--The following files are mechanical-->
+              &lt;!&ndash;The following files are mechanical&ndash;&gt;
               <exclude>r/R/rzeppelin/DESCRIPTION</exclude>
               <exclude>r/R/rzeppelin/NAMESPACE</exclude>
             </excludes>
@@ -839,7 +839,7 @@
               </goals>
             </execution>
           </executions>
-        </plugin>
+        </plugin>-->
         </plugins>
       </build>
     </profile>
